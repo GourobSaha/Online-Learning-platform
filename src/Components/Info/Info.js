@@ -37,10 +37,18 @@ const Info = ({info}) => {
                         <p>Age</p>
                     </div>
                 </div>
-                <h2>Listed Course: {info.length}</h2>
+                <h3>Add a Break</h3>
+                <div className='btn-break'>
+                    <button>0.5</button>
+                    <button>1</button>
+                    <button>1.5</button>
+                    <button>2</button>
+                    <button>2.5</button>
+                </div>
                 <h3>Course Details</h3>
                 <h4>Time Duration: {totalTime} hours</h4>
                 <h4>Total Fee: ${totalFee}</h4>
+                <h4>Break Duration:</h4>
             </div>
         </div>
     );
