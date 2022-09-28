@@ -1,0 +1,13 @@
+.nav-bar{
+    padding: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.nav-bar h2{
+    color: orange;
+    font-size: xx-large;
+    margin: 0;
+}
+.nav-bar p{
+    margin: 0;
+}

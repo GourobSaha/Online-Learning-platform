@@ -1,0 +1,23 @@
+.courses-design img{
+    width: 300px;
+    border-radius: 10px;
+}
+.courses-design{
+    border: 2px solid rgb(215, 215, 215);
+    border-radius: 10px;
+    padding: 10px;
+}
+.btn-add{
+    text-align: center;
+}
+.courses-design button{
+    border: none;
+    color: white;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+}
+.courses-design button:hover{
+    background-color: orangered;
+    cursor: pointer;
+}

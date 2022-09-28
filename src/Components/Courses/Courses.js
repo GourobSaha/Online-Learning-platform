@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './Courses.css'
 import Course from '../Course/Course';
 
 const Courses = () => {
@@ -11,7 +12,7 @@ const Courses = () => {
     },[])
 
     return (
-        <div>
+        <div className='course-container'>
            {
                 courses.map(course => <Course
                     key={course.id}
