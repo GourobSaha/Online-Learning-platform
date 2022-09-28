@@ -5,7 +5,7 @@ import Info from '../Info/Info';
 
 const Courses = () => {
     const [courses, setCourses] = useState([]);
-    
+    const [info, setInfo] = useState([]);
 
     useEffect(() => {
         fetch('data.json')
@@ -14,7 +14,9 @@ const Courses = () => {
     },[])
 
     const handleAddToList = (course) => {
-        console.log(course)
+        console.log(course);
+        const newInfo = [...info, course];
+        setInfo(newInfo);
     }
 
     return (
@@ -28,8 +30,8 @@ const Courses = () => {
                     ></Course>) 
                 }
             </div>
-            <div>
-                <Info></Info>
+            <div className='info-container'>
+                <Info info = {info}></Info>
             </div>
         </div>
         

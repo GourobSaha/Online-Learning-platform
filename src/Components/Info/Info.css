@@ -1,0 +1,13 @@
+.info{
+    position: sticky;
+    top: 0;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+.info-details{
+    margin: 10px;
+}
+.info h4{
+    margin: 5px;
+}
