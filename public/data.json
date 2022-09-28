@@ -1,0 +1,50 @@
+[
+  {
+    "id": "63346025f19fbedbe6ae7772",
+    "name": "Quantum Physics",
+    "picture": "https://img.freepik.com/free-photo/atom-biotechnology-nuclear-medicine-with-scientist-rsquo-s-hands-digital-transformation-remix_53876-126746.jpg?w=740&t=st=1664378241~exp=1664378841~hmac=f1251ea697b8ca5de83c09eafb91e6c2a49aec166678b5c21e52d9a31c1c98d7",
+    "about": "Physics is the language of the world. Quantum physics is the study of matter and energy at the most fundamental level.\r\n",
+    "fee": 22,
+    "time": 8
+  },
+  {
+    "id": "6334602597f374651b3cf8c4",
+    "name": "Applied Mathematics",
+    "picture": "https://img.freepik.com/free-photo/stack-books-with-pencil-holder-glasses-against-chalkboard_181624-38995.jpg?w=826&t=st=1664378298~exp=1664378898~hmac=14a559163a312301f298ce812a1a02146ecab78bbee58dd4cc7105f4191289a4",
+    "about": "Mathematics is the mother of Science. Applied mathematics is the application of mathematical methods by different fields such as physics, engineering, medicine, biology, finance, etc.\r\n",
+    "fee": 26,
+    "time": 5
+  },
+  {
+    "id": "63346025874d93b697755844",
+    "name": "Artificial Intelligence",
+    "picture": "https://img.freepik.com/free-photo/ai-technology-microchip-background-digital-transformation-concept_53876-124669.jpg?t=st=1664378347~exp=1664378947~hmac=0721e2ee1c7abb6bc2548b6ff4694d8a82eccb4282e78ba0d4aa90ba93888c25",
+    "about": "Artificial intelligence (AI) is intelligence demonstrated by machines, as opposed to the natural intelligence displayed by animals and humans.\r\n",
+    "fee": 28,
+    "time": 7
+  },
+  {
+    "id": "6334602573e3fdc81dba60c0",
+    "name": "Front-End Web Development",
+    "picture": "https://img.freepik.com/free-photo/close-up-image-programer-working-his-desk-office_1098-18707.jpg?w=740&t=st=1664378410~exp=1664379010~hmac=035c7437b01ca23771542ab32ccecdc249028c2a019817af01aa957ea2a9ce6d",
+    "about": "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications.\r\n",
+    "fee": 26,
+    "time": 5
+  },
+  {
+    "id": "63346025dbe5e30c2098fe27",
+    "name": "Android Development",
+    "picture": "https://img.freepik.com/free-photo/woman-hacker-using-dangerous-virous-steal-bank-information-programmer-writing-malware-cyber-attacks-using-performance-laptop-during-midnight_482257-6694.jpg?w=740&t=st=1664378580~exp=1664379180~hmac=abe87a69268489e5790936adbc4573413b8edf529e2c6ee549832ed73c002ac4",
+    "about": "Advantages of Android Development · The Android is an open-source Operating system and hence possesses a vast community for support.\r\n",
+    "fee": 23,
+    "time": 6
+  },
+  {
+    "id": "63346025dbe5e30c2098fe25",
+    "name": "Social Science",
+    "picture": "https://img.freepik.com/free-photo/friends-social-media_53876-90180.jpg?w=740&t=st=1664378648~exp=1664379248~hmac=35531ee9f7b26751798f9ffa42a85d57772a616dc622ed9e981b729b76d8927d",
+    "about": "Social science is, in its broadest sense, the study of society and the manner in which people behave and influence the world around us.\r\n",
+    "fee": 29,
+    "time": 6
+  }
+]
