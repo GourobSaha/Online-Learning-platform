@@ -4,6 +4,7 @@
     background-color: antiquewhite;
     border-radius: 10px;
     padding-left: 5px;
+    padding-bottom: 20px;
 }
 .info-details{
     margin: 10px;
@@ -43,10 +44,10 @@
     height: 35px;
     border-radius: 50%;
     border: none;
-    color: white;
     background-color: orange;
 }
 .btn-break button:hover{
+    color: white;
     background-color: orangered;
     cursor: pointer;
 }

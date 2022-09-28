@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Info.css'
 import profile from '../../Images/pp6.png';
 import location from '../../Images/location-dot-solid.svg'
 
 const Info = ({info}) => {
+    const [timeBreak, setTimeBreak] = useState(0);
 
     let totalTime = 0;
     let totalFee = 0;
     for(const course of info){
         totalTime = totalTime + course.time;
         totalFee = totalFee + course.fee;
+    }
+
+    const handleBreakTime = (breakTime) => {
+        console.log(breakTime);
+        setTimeBreak(breakTime);
     }
 
     return (
@@ -39,16 +45,16 @@ const Info = ({info}) => {
                 </div>
                 <h3>Add a Break</h3>
                 <div className='btn-break'>
-                    <button>0.5</button>
-                    <button>1</button>
-                    <button>1.5</button>
-                    <button>2</button>
-                    <button>2.5</button>
+                    <button onClick={ () => {handleBreakTime(0.5)}}>0.5h</button>
+                    <button onClick={ () => {handleBreakTime(1)}}>1h</button>
+                    <button onClick={ () => {handleBreakTime(1.5)}}>1.5h</button>
+                    <button onClick={ () => {handleBreakTime(2)}}>2h</button>
+                    <button onClick={ () => {handleBreakTime(2.5)}}>2.5h</button>
                 </div>
                 <h3>Course Details</h3>
                 <h4>Time Duration: {totalTime} hours</h4>
                 <h4>Total Fee: ${totalFee}</h4>
-                <h4>Break Duration:</h4>
+                <h4>Break Duration: {timeBreak} hours</h4>
             </div>
         </div>
     );
