@@ -1,5 +1,7 @@
 import React from 'react';
 import './Info.css'
+import profile from '../../Images/pp6.png';
+import location from '../../Images/location-dot-solid.svg'
 
 const Info = ({info}) => {
 
@@ -13,6 +15,28 @@ const Info = ({info}) => {
     return (
         <div className='info'>
             <div className='info-details'>
+                <div className='profile'>
+                    <img src={profile} alt="" />
+                    <div>
+                        <h3>Gourob Saha Surjo</h3>
+                        <p><small>Dhaka, Bangladesh</small></p>
+                        <p>Add days to life. Not life to days.</p>
+                    </div>
+                </div>
+                <div className='personal-info'>
+                    <div>
+                        <h3>59 kg</h3>
+                        <p>Weight</p>
+                    </div>
+                    <div>
+                        <h3>5.6 ft</h3>
+                        <p>Height</p>
+                    </div>
+                    <div>
+                        <h3>22 yrs</h3>
+                        <p>Age</p>
+                    </div>
+                </div>
                 <h2>Listed Course: {info.length}</h2>
                 <h3>Course Details</h3>
                 <h4>Time Duration: {totalTime} hours</h4>

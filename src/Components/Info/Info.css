@@ -11,3 +11,24 @@
 .info h4{
     margin: 5px;
 }
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.profile img{
+    width: 100px;
+    height: 100px;
+}
+.info h3,p{
+    margin: 0;
+}
+.personal-info{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: orange;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
