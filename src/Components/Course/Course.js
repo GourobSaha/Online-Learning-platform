@@ -3,7 +3,7 @@ import './Course.css'
 
 const Course = (props) => {
     const{course, handleAddToList} = props
-    const{name, id, picture, about, fee, time} = props.course;
+    const{name, picture, about, fee, time} = props.course;
 
     return (
         <div className='courses-design'>
