@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Info.css'
 import profile from '../../Images/pp6.png';
-import location from '../../Images/location-dot-solid.svg'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Info = ({info}) => {
     const [timeBreak, setTimeBreak] = useState(0);
@@ -13,10 +14,24 @@ const Info = ({info}) => {
         totalFee = totalFee + course.fee;
     }
 
+    useEffect(() => {
+          const brkTime = localStorage.getItem("brakeTime");
+          if(brkTime){
+            setTimeBreak(JSON.parse(brkTime));
+          }
+          else{
+            setTimeBreak(timeBreak);
+          }
+    }, [timeBreak])
+
     const handleBreakTime = (breakTime) => {
-        console.log(breakTime);
+        localStorage.setItem("brakeTime", JSON.stringify(breakTime));
         setTimeBreak(breakTime);
     }
+
+    const notifyHandler = () => {
+        toast.success(`Congratulations! You've Completed Your Activity`,{position:'top-center', theme:'colored'});
+    } 
 
     return (
         <div className='info'>
@@ -55,6 +70,10 @@ const Info = ({info}) => {
                 <h4>Time Duration: {totalTime} hours</h4>
                 <h4>Total Fee: ${totalFee}</h4>
                 <h4>Break Duration: {timeBreak} hours</h4>
+                <div className='btn-activity'>
+                    <button onClick={notifyHandler}>Activity Completed</button>
+                    <ToastContainer/>
+                </div>
             </div>
         </div>
     );

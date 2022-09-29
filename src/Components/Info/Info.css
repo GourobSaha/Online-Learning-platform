@@ -26,6 +26,7 @@
     margin: 0;
 }
 .personal-info{
+    color: white;
     display: flex;
     justify-content: space-evenly;
     background-color: orange;
@@ -52,14 +53,24 @@
     cursor: pointer;
 }
 
+.btn-activity{
+    text-align: center;
+}
+.btn-activity button{
+    border: none;
+    color: white;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn-activity button:hover{
+    background-color: orangered;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 768.99px) and (max-width: 1280.99px){
     .profile {
             display: flex;
             flex-direction: column;
         }
-    /* .btn-break {
-            display: flex;
-            flex-direction: column;
-        } */
 }

@@ -14,7 +14,7 @@ const Courses = () => {
     },[])
 
     const handleAddToList = (course) => {
-        console.log(course);
+        // console.log(course);
         const newInfo = [...info, course];
         setInfo(newInfo);
     }
